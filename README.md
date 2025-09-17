@@ -1,3 +1,14 @@
+#MOD
+Bit enhanced from WinEU
+https://github.com/cloudskytian/WinEU
+
+Add UAC request
+Auto language detection
+Use Ireland as only English speaking country in EEA to prevent issues.
+install.bat - by default, change HKLM\*\DeviceRegion only, tested with 24H2 26100.6584
+install_all_config.bat - change computer region preference as well, in case some bloat feature still enabled.
+welcome_to_usa.bat - in case you need escape EU, switch DeviceRegion to United States.
+
 # WinEU
 A tool that sets the Windows region to the EU region.
 # About

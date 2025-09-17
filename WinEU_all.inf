@@ -1,0 +1,10 @@
+[Version]
+Signature="$WINDOWS NT$"
+[DefaultInstall]
+AddReg=WinEU
+[WinEU]
+HKEY_LOCAL_MACHINE,"SOFTWARE\Microsoft\Windows\CurrentVersion\Control Panel\DeviceRegion",DeviceRegion,0x00010001,68
+HKEY_CURRENT_USER,"Control Panel\International\Geo",Nation,0x00000000,68
+HKEY_CURRENT_USER,"Control Panel\International\Geo",Name,0x00000000,IE
+HKEY_USERS,".DEFAULT\Control Panel\International\Geo",Nation,0x00000000,68
+HKEY_USERS,".DEFAULT\Control Panel\International\Geo",Name,0x00000000,IE

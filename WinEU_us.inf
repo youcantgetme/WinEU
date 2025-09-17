@@ -1,0 +1,6 @@
+[Version]
+Signature="$WINDOWS NT$"
+[DefaultInstall]
+AddReg=WinEU
+[WinEU]
+HKEY_LOCAL_MACHINE,"SOFTWARE\Microsoft\Windows\CurrentVersion\Control Panel\DeviceRegion",DeviceRegion,0x00010001,244

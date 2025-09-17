@@ -1,3 +1,4 @@
+@echo off
 SETLOCAL
 
 REM Specify the fully-qualified path of vmware-dem-fta-stub.dll ("%~dp0vmware-..." expects the DLL in the same folder as this script)
@@ -7,7 +8,9 @@ REM Specify the fully-qualified name of the RunDLL32.exe copy
 SET host-process=%~dp0UCPD-fix.exe
 
 REM Modify in case of non-English OS
-SET language=en-US
+REM SET language=en-US
+FOR /F "usebackq tokens=*" %%L IN (`powershell -NoProfile -Command "(Get-UICulture).Name"`) DO SET language=%%L
+echo Detected language: %language%
 
 CALL :Parse-host-process "%host-process%"
 IF NOT EXIST "%host-process-mui-path%" MKDIR "%host-process-mui-path%"
